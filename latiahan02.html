@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style02.css">
+    <title>Praktik Properti CSS Background</title>
+</head>
+<body>
+    <header>
+        <h1>Latihan CSS Background</h1>
+    </header>
+    <main>
+        <!-- SECTION 1 -->
+        <section id="hero">
+            <div class="container">
+                <h2>1. Background Image & Opacity</h2>
+                <p>Section ini menggunakan gambar sebagai background.</p>
+                <p>Kontainer ini menggunakan <code>opacity: 0.85</code>, sehingga teks dan background kontainer ini menjadi sedikit transparan terhadap gambar utama di belakangnya.</p>
+                <div class="desc">
+                    CSS: <code>background-image: url(...);</code><br>
+                    CSS: <code>opacity: 0.85;</code>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 2 -->
+        <section id="repeat-size">
+            <div class="container">
+                <h2>2. Color, Repeat, & Size</h2>[cite: 4]
+                <p>Section ini menggabungkan <code>background-color</code> biru dengan gambar pola (pattern) transparan.</p>[cite: 4]
+                <p>Pola tersebut diatur agar mengulang ke seluruh arah (<code>repeat</code>) dengan ukuran asli (<code>size: auto</code>).</p>[cite: 4]
+                
+                <div class="size-contain-demo"></div>[cite: 4]
+                <p>Kotak di atas mendemonstrasikan <code>background-size: contain</code> di dalam kontainer yang memiliki warna background berbeda.</p>[cite: 4]
+
+                <div class="desc">
+                    CSS: <code>background-color: #3498db;</code><br>[cite: 4]
+                    CSS: <code>background-repeat: repeat;</code><br>[cite: 4]
+                    CSS: <code>background-size: auto | contain | cover;</code>[cite: 4]
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 3 -->
+        <section id="position">
+            <div class="container">
+                <h2>3. Background Position</h2>[cite: 4]
+                <p>Di sini, kita menggunakan gambar abstrak yang ukurannya diset manual (800px) dan <code>no-repeat</code>.</p>[cite: 3, 4]
+                <p>Gambar tersebut diposisikan secara spesifik di <strong>Kanan Bawah</strong> section ini.</p>[cite: 3]
+
+                <div class="desc">
+                    CSS: <code>background-position: right bottom;</code><br>[cite: 3]
+                    CSS: <code>background-repeat: no-repeat;</code>[cite: 3]
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- SECTION 4 -->
+    <section id="background-attachment">
+    <div class="container">
+        <h2>4. Background Attachment (Fixed)</h2>
+        <p>Ini adalah efek favorit banyak desainer: <strong>Parallax</strong>.</p>
+        <p>Coba scroll halaman ini naik dan turun. Gambar background di section ini diam (fixed) di tempatnya, sementara konten teks di atasnya bergerak melewati gambar[cite: 6].</p>
+        
+        <div class="desc">
+            CSS: <code>background-attachment: fixed;</code><br>
+            CSS: <code>background-size: cover;</code>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; BBPVP 2026.</p>
+</footer>
+</body>
+</html>
